@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(180, 180, 180);
+    & .tarjeta{
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        border-radius: 40px;
+        padding: 7px;
+        & .container{
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/fondo.jpg);
+            background-position: center;
+            background-size: cover;
+            border-radius: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            & input{
+                color: black;
+                font-weight: 600;
+                font-size: 12pt; 
+                background-color: rgb(187, 255, 0);
+                padding: 6px 50px 6px 50px;
+                border: none;
+                border: solid 1px black;
+                display: grid;
+                place-items: center;
+                position: absolute;
+                bottom: 22px;
+                left: calc(50% - 95px);
+            }
+            & input:hover{
+                cursor: pointer;
+                transition: all 0.5s;
+                transform: scale(1.1);
+            }
+            & section{
+                background-color: rgb(70, 69, 69);
+                height: 65%;
+                width: 100%;
+                margin-bottom: 85px;
+                border-top: solid 12px lightgray;
+                border-bottom: solid 12px lightgray;
+                padding-top: 110px;
+                position: relative;
+                & .foto{
+                    height: 190px;
+                    width: 190px;
+                    background-image: url(../img/nikolai.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: -105px;
+                    left: calc(50% - 95px);
+                }
+                & .texto{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: rgb(187, 255, 0);
+                    font-weight: 500;
+                    & .estudiante{
+                        & .nombre{
+                            font-size: 18pt;
+                            font-weight: bolder;
+                        }
+                        & .estudio{
+                            font-size: 10pt;
+                        }
+                    }
+                    & .habilidades{
+                        width: 335px;
+                        text-wrap: wrap;
+                        justify-content: center;
+                    }
+                }
+                & .stats{
+                    width: 100%;
+                    height: 20%;
+                    font-size: 20pt;
+                    position: absolute;
+                    bottom: 0;
+                    display: flex;
+                    padding-bottom: 20px;
+                    & .static{
+                        height: 100%;
+                        flex: 0 0 33.33%;
+                        display: grid;
+                        place-items: center;
+                        text-align: center;
+                        font-size: 16pt;
+                        font-weight: 400;
+                        color: rgb(187, 255, 0);
+                    }
+                }
+            }
+        }
+    }
+}
